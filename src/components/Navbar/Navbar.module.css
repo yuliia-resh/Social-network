@@ -1,8 +1,15 @@
 .nav {
   grid-area: n;
-  background-color: hotpink;
+  background-color: rgb(250, 171, 211);
+  padding: 25px;
 }
 
-.active {
+.nav a {
+  text-decoration: none;
+  margin: 5px;
+  color:rgb(120, 5, 187);
+}
+
+.nav .active {
   color: blanchedalmond;
 }

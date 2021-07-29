@@ -1,22 +1,18 @@
 import React from "react"
 import style from "./MyPosts.module.css"
-import Post from "./Post/Post"
 
-const MyPosts = () => {
-    return (
+const MyPosts = (props) => (
+    <div>
+        <p>My posts</p>
+
         <div>
-            <p>My posts</p>
+            <textarea></textarea>
+            <button className={style.addPost}>Add post</button>
+        </div>
 
-            <div>
-                <textarea></textarea>
-                <button>Add post</button>
-            </div>
-
-            <div className={style.posts}>
-                <Post message="Hi! How are you?" likes="15" />
-                <Post message="It's my first post." likes="13"/>
-            </div>
-        </div>)
-}
+        <div className={style.posts}>
+            {props.posts}
+        </div>
+    </div>)
 
 export default MyPosts;

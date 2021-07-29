@@ -1,0 +1,10 @@
+.content {
+    display: grid;
+    grid-area: c;
+    grid-template-columns: 3fr 9fr;
+  }
+
+  .active {
+    color: white;
+  }
+
